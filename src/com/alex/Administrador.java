@@ -5,6 +5,8 @@ public class Administrador {
 	private int idAdm;
 	private String nombre;
 	
+	private Direccion direccion;
+	
 	public Administrador() {
 		
 	}
@@ -22,9 +24,13 @@ public class Administrador {
 		this.nombre = nombre;
 	}
 
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
+	}
+
 	@Override
 	public String toString() {
-		return "Administrador [idAdm=" + idAdm + ", nombre=" + nombre + "]";
+		return "Administrador [idAdm=" + idAdm + ", nombre=" + nombre + ", direccion=" + direccion + "]";
 	}
 
 	public void imprimirDireccion() {
