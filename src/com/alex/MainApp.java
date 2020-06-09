@@ -9,7 +9,8 @@ public class MainApp {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring_config.xml");
 		
 		Administrador administrador = (Administrador) applicationContext.getBean("admin");
-		administrador.imprimirDireccion();
+		// administrador.imprimirDireccion();
+		System.out.println(administrador);
 		
 		((ClassPathXmlApplicationContext) applicationContext).close();
 	}

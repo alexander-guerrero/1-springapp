@@ -3,6 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="admin" class="com.alex.Administrador"></bean>
-	
+	<bean id="admin" class="com.alex.Administrador">
+		<!-- Uso de Constructor -->
+		<!-- <constructor-arg name="idAdm" value="333"></constructor-arg> -->
+		<!-- <constructor-arg name="nombre" value="Cristian"></constructor-arg> -->
+
+		<!-- Uso de Métodos Setters -->
+		<property name="idAdm" value="777"></property>
+		<property name="nombre" value="Alexander"></property>
+	</bean>
+
 </beans>
